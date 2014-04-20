@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4HO-j3-7X3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4HO-j3-7X3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -119,11 +119,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">The Magnavision iOS app is an optional means of connecting to a Magnavision web videoconference from an apple iOS device.
+                                <string key="text">The Magnavision iOS app is an optional means of connecting to a Magnavision web videoconference from an apple iOS device.
 To enter a videoconference, please obtain a passkey from your videoconference organizer or log into your account at http://www.magnavision.net to create a new passkey.
 If you are the conference host, please go to the login screen of this app and enter your login password followed by a hyphen followed by the passkey (example “bluesky-12345678”).
 If you have been given a passkey by the conference host, then enter it at the pre-arranged conference time in the main screen of the iOS app (example “12345678”).
-Please remember to click EXIT when leaving the conference.</mutableString>
+Please remember to click EXIT when leaving the conference.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
