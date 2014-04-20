@@ -22,6 +22,8 @@
 		DA87BFF019046F0300C274B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCF19046F0300C274B0 /* UIKit.framework */; };
 		DA87BFF819046F0300C274B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA87BFF619046F0300C274B0 /* InfoPlist.strings */; };
 		DA87BFFA19046F0300C274B0 /* MagnaVisionWebRTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87BFF919046F0300C274B0 /* MagnaVisionWebRTCTests.m */; };
+		DA87C0051904754400C274B0 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87C0041904754400C274B0 /* InfoViewController.m */; };
+		DA87C0081904759100C274B0 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87C0071904759100C274B0 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		DA87BFF519046F0300C274B0 /* MagnaVisionWebRTCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagnaVisionWebRTCTests-Info.plist"; sourceTree = "<group>"; };
 		DA87BFF719046F0300C274B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA87BFF919046F0300C274B0 /* MagnaVisionWebRTCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagnaVisionWebRTCTests.m; sourceTree = "<group>"; };
+		DA87C0031904754400C274B0 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		DA87C0041904754400C274B0 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		DA87C0061904759100C274B0 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		DA87C0071904759100C274B0 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				DA87BFE019046F0300C274B0 /* Main_iPad.storyboard */,
 				DA87BFE319046F0300C274B0 /* ViewController.h */,
 				DA87BFE419046F0300C274B0 /* ViewController.m */,
+				DA87C0031904754400C274B0 /* InfoViewController.h */,
+				DA87C0041904754400C274B0 /* InfoViewController.m */,
+				DA87C0061904759100C274B0 /* VideoViewController.h */,
+				DA87C0071904759100C274B0 /* VideoViewController.m */,
 				DA87BFE619046F0300C274B0 /* Images.xcassets */,
 				DA87BFD219046F0300C274B0 /* Supporting Files */,
 			);
@@ -253,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA87C0081904759100C274B0 /* VideoViewController.m in Sources */,
 				DA87BFE519046F0300C274B0 /* ViewController.m in Sources */,
 				DA87BFDC19046F0300C274B0 /* AppDelegate.m in Sources */,
+				DA87C0051904754400C274B0 /* InfoViewController.m in Sources */,
 				DA87BFD819046F0300C274B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

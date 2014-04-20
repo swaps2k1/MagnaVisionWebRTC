@@ -46,6 +46,9 @@
                                         <state key="normal" title="Inf">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="uwd-Dg-NlU" kind="push" id="kGy-ej-m88"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cig-Lx-ww0">
                                         <rect key="frame" x="249" y="182" width="28" height="30"/>
@@ -53,6 +56,9 @@
                                         <state key="normal" title="Go">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="j9p-GJ-EDc" kind="push" id="I0a-Yp-6KT"/>
+                                        </connections>
                                     </button>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="NYo-ge-jxK">
                                         <rect key="frame" x="280" y="25" width="20" height="20"/>
@@ -77,6 +83,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-249" y="-115"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="tLX-VU-1Hn">
+            <objects>
+                <viewController id="j9p-GJ-EDc" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wzt-gL-pVH"/>
+                        <viewControllerLayoutGuide type="bottom" id="YUo-xq-Abf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rnJ-5V-w4t">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6j5-eU-lBq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edx-ia-I7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="680"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="6dB-qm-KN5">
+            <objects>
+                <viewController id="uwd-Dg-NlU" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zzw-ez-lEu"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gi-vr-jK0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ZZ-yn-Vxt">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLv-P9-h4D">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">The Magnavision iOS app is an optional means of connecting to a Magnavision web videoconference from an apple iOS device.
+To enter a videoconference, please obtain a passkey from your videoconference organizer or log into your account at http://www.magnavision.net to create a new passkey.
+If you are the conference host, please go to the login screen of this app and enter your login password followed by a hyphen followed by the passkey (example “bluesky-12345678”).
+If you have been given a passkey by the conference host, then enter it at the pre-arranged conference time in the main screen of the iOS app (example “12345678”).
+Please remember to click EXIT when leaving the conference.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NLv-P9-h4D" secondAttribute="trailing" id="8nP-7V-y8L"/>
+                            <constraint firstItem="NLv-P9-h4D" firstAttribute="top" secondItem="6ZZ-yn-Vxt" secondAttribute="top" id="Bbd-US-eMU"/>
+                            <constraint firstItem="NLv-P9-h4D" firstAttribute="leading" secondItem="6ZZ-yn-Vxt" secondAttribute="leading" id="J80-Nm-RhO"/>
+                            <constraint firstAttribute="bottom" secondItem="NLv-P9-h4D" secondAttribute="bottom" id="dlu-ce-IuT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D2B-YI-HSG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrs-Jd-8YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="-1256"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LHL-U9-6Ln">
