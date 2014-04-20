@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="COB-FR-1o1">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
@@ -47,6 +48,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="info:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UuD-A5-Poa"/>
                                             <segue destination="pxA-G6-XbJ" kind="push" id="Bcs-4e-myO"/>
                                         </connections>
                                     </button>
@@ -57,6 +59,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="clickToGo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fVY-wa-oeu"/>
                                             <segue destination="6pY-Cj-88O" kind="push" id="shg-hr-lJB"/>
                                         </connections>
                                     </button>
@@ -79,6 +82,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IXu-iV-oMf"/>
+                    <connections>
+                        <outlet property="btnGo" destination="xxD-UI-hQK" id="tN6-2C-Exc"/>
+                        <outlet property="lblDown" destination="o97-po-69M" id="9kS-rR-liv"/>
+                        <outlet property="lblEnterAccesCode" destination="kFx-TU-NiD" id="gHd-0q-CNm"/>
+                        <outlet property="tempAct" destination="cay-Bw-EIr" id="Pu9-xO-4Of"/>
+                        <outlet property="txtPromoCode" destination="ybY-gS-zZt" id="hdK-5O-usq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,9 +105,29 @@
                     <view key="view" contentMode="scaleToFill" id="BoE-fO-CiG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting for peer..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNK-r7-dpr">
+                                <rect key="frame" x="88" y="273" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-8i-dHu">
+                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="End Session" backgroundImage="end.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="n4o-ap-UG3"/>
+                    <connections>
+                        <outlet property="btnExit" destination="8S6-8i-dHu" id="vcq-Ue-JzW"/>
+                        <outlet property="lblConnectivity" destination="QNK-r7-dpr" id="WfD-8K-zzU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bG-hj-iLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,6 +192,9 @@ Please remember to click EXIT when leaving the conference.</string>
             <point key="canvasLocation" x="-210" y="173"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="end.png" width="160" height="43"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

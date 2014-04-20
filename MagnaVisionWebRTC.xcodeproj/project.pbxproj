@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA44600319048E910048049E /* end(land).png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFD19048E910048049E /* end(land).png */; };
+		DA44600419048E910048049E /* endlan.png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFE19048E910048049E /* endlan.png */; };
+		DA44600519048E910048049E /* reconnect(land).png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFF19048E910048049E /* reconnect(land).png */; };
+		DA44600619048E910048049E /* reconnects.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600019048E910048049E /* reconnects.png */; };
+		DA44600719048E910048049E /* end.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600119048E910048049E /* end.png */; };
+		DA44600819048E910048049E /* reconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600219048E910048049E /* reconnect.png */; };
 		DA87BFCC19046F0300C274B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCB19046F0300C274B0 /* Foundation.framework */; };
 		DA87BFCE19046F0300C274B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCD19046F0300C274B0 /* CoreGraphics.framework */; };
 		DA87BFD019046F0300C274B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCF19046F0300C274B0 /* UIKit.framework */; };
@@ -53,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA445FFD19048E910048049E /* end(land).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end(land).png"; sourceTree = "<group>"; };
+		DA445FFE19048E910048049E /* endlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endlan.png; sourceTree = "<group>"; };
+		DA445FFF19048E910048049E /* reconnect(land).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reconnect(land).png"; sourceTree = "<group>"; };
+		DA44600019048E910048049E /* reconnects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reconnects.png; sourceTree = "<group>"; };
+		DA44600119048E910048049E /* end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = end.png; sourceTree = "<group>"; };
+		DA44600219048E910048049E /* reconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reconnect.png; sourceTree = "<group>"; };
 		DA87BFC819046F0300C274B0 /* MagnaVisionWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnaVisionWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA87BFCB19046F0300C274B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA87BFCD19046F0300C274B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +194,12 @@
 		DA87BFD119046F0300C274B0 /* MagnaVisionWebRTC */ = {
 			isa = PBXGroup;
 			children = (
+				DA445FFD19048E910048049E /* end(land).png */,
+				DA445FFE19048E910048049E /* endlan.png */,
+				DA445FFF19048E910048049E /* reconnect(land).png */,
+				DA44600019048E910048049E /* reconnects.png */,
+				DA44600119048E910048049E /* end.png */,
+				DA44600219048E910048049E /* reconnect.png */,
 				DA87C05119047BAE00C274B0 /* opentok.bundle */,
 				DA87BFDA19046F0300C274B0 /* AppDelegate.h */,
 				DA87BFDB19046F0300C274B0 /* AppDelegate.m */,
@@ -306,9 +324,15 @@
 			files = (
 				DA87C05219047BAE00C274B0 /* opentok.bundle in Resources */,
 				DA87BFE219046F0300C274B0 /* Main_iPad.storyboard in Resources */,
+				DA44600619048E910048049E /* reconnects.png in Resources */,
 				DA87BFE719046F0300C274B0 /* Images.xcassets in Resources */,
 				DA87BFDF19046F0300C274B0 /* Main_iPhone.storyboard in Resources */,
+				DA44600419048E910048049E /* endlan.png in Resources */,
 				DA87BFD619046F0300C274B0 /* InfoPlist.strings in Resources */,
+				DA44600819048E910048049E /* reconnect.png in Resources */,
+				DA44600719048E910048049E /* end.png in Resources */,
+				DA44600319048E910048049E /* end(land).png in Resources */,
+				DA44600519048E910048049E /* reconnect(land).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

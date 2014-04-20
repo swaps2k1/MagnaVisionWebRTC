@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4HO-j3-7X3">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
@@ -47,6 +48,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huL-kg-bGv"/>
                                             <segue destination="uwd-Dg-NlU" kind="push" id="kGy-ej-m88"/>
                                         </connections>
                                     </button>
@@ -57,6 +59,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="clickToGo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2x-og-dC2"/>
                                             <segue destination="j9p-GJ-EDc" kind="push" id="I0a-Yp-6KT"/>
                                         </connections>
                                     </button>
@@ -79,6 +82,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ioj-3f-xSJ"/>
+                    <connections>
+                        <outlet property="btnGo" destination="cig-Lx-ww0" id="2pc-Tr-HBu"/>
+                        <outlet property="lblDown" destination="Tao-GK-qQU" id="M9A-Yv-3cr"/>
+                        <outlet property="lblEnterAccesCode" destination="fuX-kl-tYm" id="WuK-qZ-6bp"/>
+                        <outlet property="tempAct" destination="NYo-ge-jxK" id="5go-Ql-4s2"/>
+                        <outlet property="txtPromoCode" destination="cEh-3k-hld" id="MD9-jC-lSy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,9 +105,32 @@
                     <view key="view" contentMode="scaleToFill" id="rnJ-5V-w4t">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting for peer..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-P2-q3I">
+                                <rect key="frame" x="317" y="501" width="135" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pru-L8-gDl">
+                                <rect key="frame" x="0.0" y="994" width="768" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="End Session" backgroundImage="end.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButtonClicked:" destination="j9p-GJ-EDc" eventType="touchUpInside" id="J2i-Qz-ObR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6j5-eU-lBq"/>
+                    <connections>
+                        <outlet property="btnExit" destination="pru-L8-gDl" id="rBW-PO-fn8"/>
+                        <outlet property="lblConnectivity" destination="6Jr-P2-q3I" id="fzG-bf-NIF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edx-ia-I7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,6 +196,9 @@ Please remember to click EXIT when leaving the conference.</string>
             <point key="canvasLocation" x="-1233" y="-115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="end.png" width="160" height="43"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
