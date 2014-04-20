@@ -39,6 +39,7 @@
 		DA87C04A1904799700C274B0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0491904799700C274B0 /* AudioToolbox.framework */; };
 		DA87C04C190479A400C274B0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04B190479A400C274B0 /* CoreTelephony.framework */; };
 		DA87C04E190479B900C274B0 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04D190479B900C274B0 /* Opentok.framework */; };
+		DA87C05219047BAE00C274B0 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA87C05119047BAE00C274B0 /* opentok.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		DA87C0491904799700C274B0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DA87C04B190479A400C274B0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DA87C04D190479B900C274B0 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opentok.framework; path = "../../opentok-ios-sdk-webrtc-master/Opentok.framework"; sourceTree = "<group>"; };
+		DA87C05119047BAE00C274B0 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = opentok.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		DA87BFD119046F0300C274B0 /* MagnaVisionWebRTC */ = {
 			isa = PBXGroup;
 			children = (
+				DA87C05119047BAE00C274B0 /* opentok.bundle */,
 				DA87BFDA19046F0300C274B0 /* AppDelegate.h */,
 				DA87BFDB19046F0300C274B0 /* AppDelegate.m */,
 				DA87BFDD19046F0300C274B0 /* Main_iPhone.storyboard */,
@@ -301,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA87C05219047BAE00C274B0 /* opentok.bundle in Resources */,
 				DA87BFE219046F0300C274B0 /* Main_iPad.storyboard in Resources */,
 				DA87BFE719046F0300C274B0 /* Images.xcassets in Resources */,
 				DA87BFDF19046F0300C274B0 /* Main_iPhone.storyboard in Resources */,
@@ -421,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -472,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: swapnil salunke (F274PNV85D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
@@ -480,6 +485,7 @@
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC/MagnaVisionWebRTC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00A004CB-0892-4E08-B032-BEC63E1639F5";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -498,6 +504,7 @@
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC/MagnaVisionWebRTC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00A004CB-0892-4E08-B032-BEC63E1639F5";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
