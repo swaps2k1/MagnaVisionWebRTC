@@ -15,6 +15,7 @@
     OTSession* _session;
     OTPublisher* _publisher;
     OTSubscriber* _subscriber;
+    NSTimer *timerForPeriodicHit;
 }
 @end
 
@@ -32,6 +33,7 @@ static bool subscribeToSelf = NO; // Change to NO if you want to subscribe strea
 @synthesize strSession;
 @synthesize strFrmuType;
 @synthesize strPassKey_Id;
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -116,6 +118,48 @@ UIBackgroundTaskIdentifier bgTask = 0;
     [self doDisconnect];
 }
 
+-(void)timerInitialize
+{
+    if (timerForPeriodicHit!=nil) {
+        [timerForPeriodicHit invalidate];
+        timerForPeriodicHit = nil;
+    }
+    timerForPeriodicHit = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(updateThatIAmConnected:) userInfo:nil repeats:YES];
+    NSLog(@"Timer Starts...");
+}
+-(void)disableTimer
+{
+    if (timerForPeriodicHit) {
+        [timerForPeriodicHit invalidate];
+        timerForPeriodicHit = nil;
+    }
+    NSLog(@"Timer Ends...");
+}
+
+-(void)updateThatIAmConnected:(NSTimer *)timer
+{
+    
+    NSLog(@"Update... I am connected...");
+    NSString *post =[NSString stringWithFormat:@"passkey_id=%@&frmutype=%@",strPassKey_Id,strFrmuType];
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    //[request setURL:[NSURL URLWithString:@"http://magnavision.net/exit_webservice.php"]];
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/checkActive_webservice.php"]];
+    //URL signature changed
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    
+    NSOperationQueue *queueOperation= [[NSOperationQueue alloc]init];
+    
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:queueOperation completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        NSLog(@"Response Code is %@",response.description);
+    }];
+}
 
 -(void)performExitAction
 {
@@ -382,7 +426,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)doPublish
 {
-    
+    [self timerInitialize];
     _lblConnectivity.text = [self returnCorrectString:[[NSUserDefaults standardUserDefaults] objectForKey:@"chatKey"]];
     NSLog(@"doPublish called");
     if (_publisher != nil)  //only do once. http://www.tokbox.com/forums/ios/there-is-already-a-publisher-on-this-session-crash-t12893 
@@ -434,6 +478,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
 - (void)sessionDidDisconnect:(OTSession*)session 
 {
     btnDisconnect.hidden = YES;
+    [self disableTimer];
     if (kUseButtons)
         //btnConnection.hidden = NO;
     
