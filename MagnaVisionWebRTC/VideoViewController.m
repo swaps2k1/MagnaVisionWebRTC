@@ -426,7 +426,6 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)doPublish
 {
-    [self timerInitialize];
     _lblConnectivity.text = [self returnCorrectString:[[NSUserDefaults standardUserDefaults] objectForKey:@"chatKey"]];
     NSLog(@"doPublish called");
     if (_publisher != nil)  //only do once. http://www.tokbox.com/forums/ios/there-is-already-a-publisher-on-this-session-crash-t12893 
@@ -578,6 +577,8 @@ UIBackgroundTaskIdentifier bgTask = 0;
             _subscriber = [[OTSubscriber alloc] initWithStream:stream delegate:self];
             _subscriber.subscribeToAudio = YES;
             _subscriber.subscribeToVideo = YES;
+            [self timerInitialize];
+
         }
     }
 }
