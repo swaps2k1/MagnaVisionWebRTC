@@ -215,21 +215,21 @@ else
    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
 //    [request setURL:[NSURL URLWithString:@"http://magnavision.net/waiting_webservice.php"]];
   //Changing request call
-    [request setURL:[NSURL URLWithString:@"http://amada.magnavision360.com/waiting_webservice.php"]];
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/waiting_webservice.php"]];
    [request setHTTPMethod:@"POST"];
    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
    [request setHTTPBody:postData];
    
-   NSURLResponse *response=nil;
+   NSHTTPURLResponse *response=nil;
    NSError *err=nil;
    
     NSData *data= [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     
     self.serviceHitCount++;
     
-    if (err != nil)
-       // NSLog(@"remote url returned %d %@",(int)[response statusCode],[NSHTTPURLResponse localizedStringForStatusCode:[response statusCode]]);
+    //if (err != nil)
+       // NSLog(@"remote url returned %d %@",(NSInteger)[response statusCode],[NSHTTPURLResponse localizedStringForStatusCode:response sta]);
 
     
     if (err==nil)
@@ -283,7 +283,19 @@ else
                 {
                     if (session != nil)
                     {
-                        VideoViewController *obj=[[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:[NSBundle mainBundle]];
+                        VideoViewController *obj;
+                        UIStoryboard *mainStoryboard;
+                        if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) {
+                            mainStoryboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle:nil];
+                            obj = [mainStoryboard instantiateViewControllerWithIdentifier:@"videoViewIpad"];
+                        }
+                        else
+                        {
+                            mainStoryboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+                            obj = [mainStoryboard instantiateViewControllerWithIdentifier:@"videoViewIphone"];
+                        }
+                        
+                        //VideoViewController *obj=[[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:[NSBundle mainBundle]];
                         obj.strToke=token;
                         obj.strSession=session;
                         obj.strPassKey_Id= passkey_id;
@@ -430,12 +442,14 @@ else
 }
 
 
--(IBAction)info:(id)sender
-{
-    InfoViewController *objTempHelp =[[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:[NSBundle mainBundle]];
-    [self.navigationController pushViewController:objTempHelp animated:YES];
-   
-}
+//-(IBAction)info:(id)sender
+//{
+//    InfoViewController *objTempHelp =[[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:[NSBundle mainBundle]];
+//    [self.navigationController pushViewController:objTempHelp animated:YES];
+//   
+//}
+
+
 -(void) openReceiverApp:(NSString *)session with :(NSString *)Token with :(NSString *)passkey_id with :(NSString *)strFrmuType
 {
     //txtPromoCode.text=@"";

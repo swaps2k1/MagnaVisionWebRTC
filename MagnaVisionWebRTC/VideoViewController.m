@@ -125,7 +125,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     //[request setURL:[NSURL URLWithString:@"http://magnavision.net/exit_webservice.php"]];
-    [request setURL:[NSURL URLWithString:@"http://amada.magnavision360.com/exit_webservice.php"]];
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]];
     //URL signature changed
     
     [request setHTTPMethod:@"POST"];
@@ -297,10 +297,10 @@ UIBackgroundTaskIdentifier bgTask = 0;
    // arrange all views.
    // When vertically orientated, we split vertically, else horixontally.
    // buttons go at the bottom
-    CGRect mainViewRect = self.view.frame;
+    CGRect mainViewRect = self.streamView.bounds;
     
     CGRect rectForVideos = mainViewRect;
-    rectForVideos.size.height -= (kButtonHeight + kLLBLHeight);
+    //rectForVideos.size.height -= (kButtonHeight + kLLBLHeight);
     
     CGRect publishRect = CGRectZero;
     CGRect subscribeRect = CGRectZero;
@@ -339,19 +339,21 @@ UIBackgroundTaskIdentifier bgTask = 0;
     lblFrame.origin.y = mainViewRect.size.height - kButtonHeight - kLLBLHeight;
     
     
-    [_btnExit setFrame:buttonExitRect];
+    //[_btnExit setFrame:buttonExitRect];
     //[btnConnection setFrame:rightButtonRect];
     //[btnDisconnect setFrame:rightButtonRect];
-    [_lblConnectivity setFrame:lblFrame];
+    //[_lblConnectivity setFrame:lblFrame];
     [_publisher.view setFrame:publishRect];
     [_subscriber.view setFrame:subscribeRect];
+    [self.streamView addSubview:_publisher.view];
+    [self.streamView addSubview:_subscriber.view];
     
     UIView *coverUpView1 = [[UIView alloc]initWithFrame:CGRectZero];
     CGRect coverUpFrame = publishRect;
-    coverUpFrame.size.height = 40;
+    coverUpFrame.size.height = 35;
     coverUpView1.frame = coverUpFrame;
     coverUpView1.backgroundColor = [UIColor blackColor];
-    coverUpView1.alpha = 0.7;
+    coverUpView1.alpha = 0.9;
 
     [_publisher.view addSubview:coverUpView1];
     [_subscriber.view addSubview:coverUpView1];

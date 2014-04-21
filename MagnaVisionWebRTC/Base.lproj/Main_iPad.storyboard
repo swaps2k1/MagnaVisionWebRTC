@@ -48,7 +48,6 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huL-kg-bGv"/>
                                             <segue destination="uwd-Dg-NlU" kind="push" id="kGy-ej-m88"/>
                                         </connections>
                                     </button>
@@ -59,8 +58,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clickToGo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2x-og-dC2"/>
-                                            <segue destination="j9p-GJ-EDc" kind="push" id="I0a-Yp-6KT"/>
+                                            <action selector="clickToGo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3Q-RG-gUC"/>
                                         </connections>
                                     </button>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="NYo-ge-jxK">
@@ -75,7 +73,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NzI-oM-45i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="BZX-n6-Kgx"/>
                             <constraint firstAttribute="centerX" secondItem="NzI-oM-45i" secondAttribute="centerX" id="GIm-bA-7wh"/>
@@ -97,7 +95,7 @@
         <!--Video View Controller-->
         <scene sceneID="tLX-VU-1Hn">
             <objects>
-                <viewController id="j9p-GJ-EDc" customClass="VideoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="videoViewIpad" id="j9p-GJ-EDc" customClass="VideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wzt-gL-pVH"/>
                         <viewControllerLayoutGuide type="bottom" id="YUo-xq-Abf"/>
@@ -106,16 +104,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting for peer..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-P2-q3I">
-                                <rect key="frame" x="317" y="501" width="135" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for peer..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-P2-q3I">
+                                <rect key="frame" x="317" y="960" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pru-L8-gDl">
-                                <rect key="frame" x="0.0" y="994" width="768" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pru-L8-gDl">
+                                <rect key="frame" x="0.0" y="986" width="768" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="NAO-BD-mGJ"/>
+                                </constraints>
                                 <state key="normal" title="End Session" backgroundImage="end.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -123,13 +124,30 @@
                                     <action selector="exitButtonClicked:" destination="j9p-GJ-EDc" eventType="touchUpInside" id="J2i-Qz-ObR"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i25-xV-WpT">
+                                <rect key="frame" x="0.0" y="20" width="768" height="936"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i25-xV-WpT" firstAttribute="leading" secondItem="pru-L8-gDl" secondAttribute="leading" id="E4Y-av-FhP"/>
+                            <constraint firstItem="pru-L8-gDl" firstAttribute="leading" secondItem="rnJ-5V-w4t" secondAttribute="leading" id="E63-Ir-ErH"/>
+                            <constraint firstItem="i25-xV-WpT" firstAttribute="top" secondItem="Wzt-gL-pVH" secondAttribute="bottom" id="EFw-2q-gNR"/>
+                            <constraint firstItem="i25-xV-WpT" firstAttribute="trailing" secondItem="pru-L8-gDl" secondAttribute="trailing" id="VWQ-dm-1BA"/>
+                            <constraint firstItem="pru-L8-gDl" firstAttribute="top" secondItem="6Jr-P2-q3I" secondAttribute="bottom" constant="5" id="XhB-MB-bAQ"/>
+                            <constraint firstItem="6Jr-P2-q3I" firstAttribute="top" secondItem="i25-xV-WpT" secondAttribute="bottom" constant="4" id="eDl-y1-ykY"/>
+                            <constraint firstItem="YUo-xq-Abf" firstAttribute="top" secondItem="pru-L8-gDl" secondAttribute="bottom" constant="1" id="k5Q-h2-GTP"/>
+                            <constraint firstAttribute="trailing" secondItem="pru-L8-gDl" secondAttribute="trailing" id="wtA-yr-dHA"/>
+                            <constraint firstAttribute="centerX" secondItem="6Jr-P2-q3I" secondAttribute="centerX" id="zzu-sx-9Ey"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6j5-eU-lBq"/>
                     <connections>
                         <outlet property="btnExit" destination="pru-L8-gDl" id="rBW-PO-fn8"/>
                         <outlet property="lblConnectivity" destination="6Jr-P2-q3I" id="fzG-bf-NIF"/>
+                        <outlet property="streamView" destination="i25-xV-WpT" id="J5D-un-dM6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edx-ia-I7n" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -25,6 +25,8 @@
 @property (nonatomic,retain)NSString *strSession;
 @property (nonatomic,retain)    NSString *strFrmuType;
 @property (nonatomic,retain)    NSString *strPassKey_Id;
+@property (weak, nonatomic) IBOutlet UIView *streamView;
+
 - (void)doConnect;
 - (void)doDisconnect;
 - (void)doPublish;

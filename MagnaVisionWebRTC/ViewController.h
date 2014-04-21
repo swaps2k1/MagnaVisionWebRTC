@@ -22,6 +22,6 @@
 @property (retain, nonatomic) IBOutlet UIButton *btnGo;
 @property (retain, nonatomic) IBOutlet UILabel *lblDown;
 -(IBAction)clickToGo:(id)sender;
--(IBAction)info:(id)sender;
+//-(IBAction)info:(id)sender;
 
 @end
