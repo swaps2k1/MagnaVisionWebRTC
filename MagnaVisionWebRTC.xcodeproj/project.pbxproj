@@ -50,6 +50,7 @@
 		DAC15C161905B55D00189C7D /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C141905B55D00189C7D /* logo@2x.png */; };
 		DAC15C191905B83D00189C7D /* btnGo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C171905B83D00189C7D /* btnGo.png */; };
 		DAC15C1A1905B83D00189C7D /* btnGo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C181905B83D00189C7D /* btnGo@2x.png */; };
+		DACBECC5190701A000D4EBA8 /* Endconference.png in Resources */ = {isa = PBXBuildFile; fileRef = DACBECC4190701A000D4EBA8 /* Endconference.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		DAC15C141905B55D00189C7D /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAC15C171905B83D00189C7D /* btnGo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGo.png; sourceTree = "<group>"; };
 		DAC15C181905B83D00189C7D /* btnGo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGo@2x.png"; sourceTree = "<group>"; };
+		DACBECC4190701A000D4EBA8 /* Endconference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endconference.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		DA87BFD119046F0300C274B0 /* MagnaVisionWebRTC */ = {
 			isa = PBXGroup;
 			children = (
+				DACBECC4190701A000D4EBA8 /* Endconference.png */,
 				DA445FFD19048E910048049E /* end(land).png */,
 				DA445FFE19048E910048049E /* endlan.png */,
 				DA445FFF19048E910048049E /* reconnect(land).png */,
@@ -337,6 +340,7 @@
 				DAC15C151905B55D00189C7D /* logo.png in Resources */,
 				DA87C05219047BAE00C274B0 /* opentok.bundle in Resources */,
 				DAC15C191905B83D00189C7D /* btnGo.png in Resources */,
+				DACBECC5190701A000D4EBA8 /* Endconference.png in Resources */,
 				DA87BFE219046F0300C274B0 /* Main_iPad.storyboard in Resources */,
 				DA44600619048E910048049E /* reconnects.png in Resources */,
 				DAC15C1A1905B83D00189C7D /* btnGo@2x.png in Resources */,
