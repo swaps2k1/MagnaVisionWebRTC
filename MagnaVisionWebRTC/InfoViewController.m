@@ -31,6 +31,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    self.title = @"Info";
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
