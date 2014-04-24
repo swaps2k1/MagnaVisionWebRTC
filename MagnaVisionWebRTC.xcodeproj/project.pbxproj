@@ -103,7 +103,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagnaVisionWebRTC Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnaVisionWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02121419098B9B00BBABD9 /* MagnaVisionWebRTC Release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MagnaVisionWebRTC Release.plist"; path = "/Users/swapnilsalunke/Repositories/MagnavsionWebRtc/MagnaVisionWebRTC/MagnaVisionWebRTC Release.plist"; sourceTree = "<absolute>"; };
 		DA445FFD19048E910048049E /* end(land).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end(land).png"; sourceTree = "<group>"; };
 		DA445FFE19048E910048049E /* endlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endlan.png; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 			children = (
 				DA87BFC819046F0300C274B0 /* MagnaVisionWebRTC.app */,
 				DA87BFEC19046F0300C274B0 /* MagnaVisionWebRTCTests.xctest */,
-				DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC Release.app */,
+				DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			);
 			name = "MagnaVisionWebRTC Release";
 			productName = MagnaVisionWebRTC;
-			productReference = DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC Release.app */;
+			productReference = DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DA87BFC719046F0300C274B0 /* MagnaVisionWebRTC */ = {
@@ -562,7 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
@@ -570,7 +570,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC Release.plist";
-				PRODUCT_NAME = "MagnaVisionWebRTC Release";
+				PRODUCT_NAME = MagnaVisionWebRTC;
 				PROVISIONING_PROFILE = "00A004CB-0892-4E08-B032-BEC63E1639F5";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -590,8 +590,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC Release.plist";
-				PRODUCT_NAME = "MagnaVisionWebRTC Release";
-				PROVISIONING_PROFILE = "95B0EFF6-0177-4974-93CD-026D9C318AA1";
+				PRODUCT_NAME = MagnaVisionWebRTC;
+				PROVISIONING_PROFILE = "A791CF5C-5D15-4F4E-BAF3-EF621C04FE86";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -617,7 +617,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: swapnil salunke (99RXZTB3NJ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -661,7 +661,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Simcoe Habilitation Services Inc (MB365MEN5R)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -672,6 +672,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -704,7 +705,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Simcoe Habilitation Services Inc (MB365MEN5R)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
@@ -713,7 +714,7 @@
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC/MagnaVisionWebRTC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "A791CF5C-5D15-4F4E-BAF3-EF621C04FE86";
+				PROVISIONING_PROFILE = "5520217A-08BB-4C42-9FA9-9EA5CB24B14B";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
