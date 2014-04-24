@@ -180,11 +180,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">The Magnavision360 iOS app is an optional thin-client for realtors and home seekers for connecting to a Magnavision360.com videoconference to participate in a live realtime home tour.
+                                <string key="text">The Magnavision360 iOS app is an optional thin-client for realtors and home seekers for connecting to a Magnavision360.com videoconference to participate in a live realtime home tour.
  
 If you are a realtor, enter your confidential realtor passkey (your account password-passkey) on the main screen. If you don’t have one, you can get one from at www.magnavision360.com
  
-If you are a home-seeker, please obtain a client passkey from your realtor and enter it on the main screen at the pre-arranged time of your videoconference.</mutableString>
+If you are a home-seeker, please obtain a client passkey from your realtor and enter it on the main screen at the pre-arranged time of your videoconference.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
