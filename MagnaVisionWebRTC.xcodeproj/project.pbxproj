@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0211E719098B9A00BBABD9 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87C0071904759100C274B0 /* VideoViewController.m */; };
+		DA0211E819098B9A00BBABD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87BFE419046F0300C274B0 /* ViewController.m */; };
+		DA0211E919098B9A00BBABD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87BFDB19046F0300C274B0 /* AppDelegate.m */; };
+		DA0211EA19098B9A00BBABD9 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87C0041904754400C274B0 /* InfoViewController.m */; };
+		DA0211EB19098B9A00BBABD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87BFD719046F0300C274B0 /* main.m */; };
+		DA0211ED19098B9A00BBABD9 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04D190479B900C274B0 /* Opentok.framework */; };
+		DA0211EE19098B9A00BBABD9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04B190479A400C274B0 /* CoreTelephony.framework */; };
+		DA0211EF19098B9A00BBABD9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0491904799700C274B0 /* AudioToolbox.framework */; };
+		DA0211F019098B9A00BBABD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0471904798F00C274B0 /* AVFoundation.framework */; };
+		DA0211F119098B9A00BBABD9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0451904798700C274B0 /* CFNetwork.framework */; };
+		DA0211F219098B9A00BBABD9 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0431904797100C274B0 /* CoreAudio.framework */; };
+		DA0211F319098B9A00BBABD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCD19046F0300C274B0 /* CoreGraphics.framework */; };
+		DA0211F419098B9A00BBABD9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0411904795D00C274B0 /* CoreMedia.framework */; };
+		DA0211F519098B9A00BBABD9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C03F1904794F00C274B0 /* CoreVideo.framework */; };
+		DA0211F619098B9A00BBABD9 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C03D1904793700C274B0 /* libstdc++.dylib */; };
+		DA0211F719098B9A00BBABD9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C03B1904792C00C274B0 /* libz.dylib */; };
+		DA0211F819098B9A00BBABD9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0391904792000C274B0 /* MobileCoreServices.framework */; };
+		DA0211F919098B9A00BBABD9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0371904791800C274B0 /* OpenGLES.framework */; };
+		DA0211FA19098B9A00BBABD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0351904790D00C274B0 /* QuartzCore.framework */; };
+		DA0211FB19098B9A00BBABD9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0331904790100C274B0 /* Security.framework */; };
+		DA0211FC19098B9A00BBABD9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C031190478F600C274B0 /* SystemConfiguration.framework */; };
+		DA0211FD19098B9A00BBABD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCF19046F0300C274B0 /* UIKit.framework */; };
+		DA0211FE19098B9A00BBABD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCB19046F0300C274B0 /* Foundation.framework */; };
+		DA02120019098B9A00BBABD9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C131905B55D00189C7D /* logo.png */; };
+		DA02120119098B9A00BBABD9 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA87C05119047BAE00C274B0 /* opentok.bundle */; };
+		DA02120219098B9A00BBABD9 /* btnGo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C171905B83D00189C7D /* btnGo.png */; };
+		DA02120319098B9A00BBABD9 /* Endconference.png in Resources */ = {isa = PBXBuildFile; fileRef = DACBECC4190701A000D4EBA8 /* Endconference.png */; };
+		DA02120419098B9A00BBABD9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA87BFE019046F0300C274B0 /* Main_iPad.storyboard */; };
+		DA02120519098B9A00BBABD9 /* reconnects.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600019048E910048049E /* reconnects.png */; };
+		DA02120619098B9A00BBABD9 /* btnGo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C181905B83D00189C7D /* btnGo@2x.png */; };
+		DA02120719098B9A00BBABD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA87BFE619046F0300C274B0 /* Images.xcassets */; };
+		DA02120819098B9A00BBABD9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA87BFDD19046F0300C274B0 /* Main_iPhone.storyboard */; };
+		DA02120919098B9A00BBABD9 /* endlan.png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFE19048E910048049E /* endlan.png */; };
+		DA02120A19098B9A00BBABD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA87BFD419046F0300C274B0 /* InfoPlist.strings */; };
+		DA02120B19098B9A00BBABD9 /* reconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600219048E910048049E /* reconnect.png */; };
+		DA02120C19098B9A00BBABD9 /* end.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600119048E910048049E /* end.png */; };
+		DA02120D19098B9A00BBABD9 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C141905B55D00189C7D /* logo@2x.png */; };
+		DA02120E19098B9A00BBABD9 /* end(land).png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFD19048E910048049E /* end(land).png */; };
+		DA02120F19098B9A00BBABD9 /* reconnect(land).png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFF19048E910048049E /* reconnect(land).png */; };
 		DA44600319048E910048049E /* end(land).png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFD19048E910048049E /* end(land).png */; };
 		DA44600419048E910048049E /* endlan.png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFE19048E910048049E /* endlan.png */; };
 		DA44600519048E910048049E /* reconnect(land).png in Resources */ = {isa = PBXBuildFile; fileRef = DA445FFF19048E910048049E /* reconnect(land).png */; };
@@ -64,6 +103,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagnaVisionWebRTC Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA02121419098B9B00BBABD9 /* MagnaVisionWebRTC Release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MagnaVisionWebRTC Release.plist"; path = "/Users/swapnilsalunke/Repositories/MagnavsionWebRtc/MagnaVisionWebRTC/MagnaVisionWebRTC Release.plist"; sourceTree = "<absolute>"; };
 		DA445FFD19048E910048049E /* end(land).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end(land).png"; sourceTree = "<group>"; };
 		DA445FFE19048E910048049E /* endlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endlan.png; sourceTree = "<group>"; };
 		DA445FFF19048E910048049E /* reconnect(land).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reconnect(land).png"; sourceTree = "<group>"; };
@@ -118,6 +159,31 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA0211EC19098B9A00BBABD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0211ED19098B9A00BBABD9 /* Opentok.framework in Frameworks */,
+				DA0211EE19098B9A00BBABD9 /* CoreTelephony.framework in Frameworks */,
+				DA0211EF19098B9A00BBABD9 /* AudioToolbox.framework in Frameworks */,
+				DA0211F019098B9A00BBABD9 /* AVFoundation.framework in Frameworks */,
+				DA0211F119098B9A00BBABD9 /* CFNetwork.framework in Frameworks */,
+				DA0211F219098B9A00BBABD9 /* CoreAudio.framework in Frameworks */,
+				DA0211F319098B9A00BBABD9 /* CoreGraphics.framework in Frameworks */,
+				DA0211F419098B9A00BBABD9 /* CoreMedia.framework in Frameworks */,
+				DA0211F519098B9A00BBABD9 /* CoreVideo.framework in Frameworks */,
+				DA0211F619098B9A00BBABD9 /* libstdc++.dylib in Frameworks */,
+				DA0211F719098B9A00BBABD9 /* libz.dylib in Frameworks */,
+				DA0211F819098B9A00BBABD9 /* MobileCoreServices.framework in Frameworks */,
+				DA0211F919098B9A00BBABD9 /* OpenGLES.framework in Frameworks */,
+				DA0211FA19098B9A00BBABD9 /* QuartzCore.framework in Frameworks */,
+				DA0211FB19098B9A00BBABD9 /* Security.framework in Frameworks */,
+				DA0211FC19098B9A00BBABD9 /* SystemConfiguration.framework in Frameworks */,
+				DA0211FD19098B9A00BBABD9 /* UIKit.framework in Frameworks */,
+				DA0211FE19098B9A00BBABD9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA87BFC519046F0300C274B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +229,7 @@
 				DA87BFF319046F0300C274B0 /* MagnaVisionWebRTCTests */,
 				DA87BFCA19046F0300C274B0 /* Frameworks */,
 				DA87BFC919046F0300C274B0 /* Products */,
+				DA02121419098B9B00BBABD9 /* MagnaVisionWebRTC Release.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +238,7 @@
 			children = (
 				DA87BFC819046F0300C274B0 /* MagnaVisionWebRTC.app */,
 				DA87BFEC19046F0300C274B0 /* MagnaVisionWebRTCTests.xctest */,
+				DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC Release.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +332,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA0211E519098B9A00BBABD9 /* MagnaVisionWebRTC Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA02121019098B9A00BBABD9 /* Build configuration list for PBXNativeTarget "MagnaVisionWebRTC Release" */;
+			buildPhases = (
+				DA0211E619098B9A00BBABD9 /* Sources */,
+				DA0211EC19098B9A00BBABD9 /* Frameworks */,
+				DA0211FF19098B9A00BBABD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MagnaVisionWebRTC Release";
+			productName = MagnaVisionWebRTC;
+			productReference = DA02121319098B9A00BBABD9 /* MagnaVisionWebRTC Release.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DA87BFC719046F0300C274B0 /* MagnaVisionWebRTC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA87BFFD19046F0300C274B0 /* Build configuration list for PBXNativeTarget "MagnaVisionWebRTC" */;
@@ -330,12 +415,36 @@
 			projectRoot = "";
 			targets = (
 				DA87BFC719046F0300C274B0 /* MagnaVisionWebRTC */,
+				DA0211E519098B9A00BBABD9 /* MagnaVisionWebRTC Release */,
 				DA87BFEB19046F0300C274B0 /* MagnaVisionWebRTCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA0211FF19098B9A00BBABD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA02120019098B9A00BBABD9 /* logo.png in Resources */,
+				DA02120119098B9A00BBABD9 /* opentok.bundle in Resources */,
+				DA02120219098B9A00BBABD9 /* btnGo.png in Resources */,
+				DA02120319098B9A00BBABD9 /* Endconference.png in Resources */,
+				DA02120419098B9A00BBABD9 /* Main_iPad.storyboard in Resources */,
+				DA02120519098B9A00BBABD9 /* reconnects.png in Resources */,
+				DA02120619098B9A00BBABD9 /* btnGo@2x.png in Resources */,
+				DA02120719098B9A00BBABD9 /* Images.xcassets in Resources */,
+				DA02120819098B9A00BBABD9 /* Main_iPhone.storyboard in Resources */,
+				DA02120919098B9A00BBABD9 /* endlan.png in Resources */,
+				DA02120A19098B9A00BBABD9 /* InfoPlist.strings in Resources */,
+				DA02120B19098B9A00BBABD9 /* reconnect.png in Resources */,
+				DA02120C19098B9A00BBABD9 /* end.png in Resources */,
+				DA02120D19098B9A00BBABD9 /* logo@2x.png in Resources */,
+				DA02120E19098B9A00BBABD9 /* end(land).png in Resources */,
+				DA02120F19098B9A00BBABD9 /* reconnect(land).png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA87BFC619046F0300C274B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +479,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA0211E619098B9A00BBABD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0211E719098B9A00BBABD9 /* VideoViewController.m in Sources */,
+				DA0211E819098B9A00BBABD9 /* ViewController.m in Sources */,
+				DA0211E919098B9A00BBABD9 /* AppDelegate.m in Sources */,
+				DA0211EA19098B9A00BBABD9 /* InfoViewController.m in Sources */,
+				DA0211EB19098B9A00BBABD9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA87BFC419046F0300C274B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +557,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA02121119098B9A00BBABD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
+				INFOPLIST_FILE = "MagnaVisionWebRTC Release.plist";
+				PRODUCT_NAME = "MagnaVisionWebRTC Release";
+				PROVISIONING_PROFILE = "00A004CB-0892-4E08-B032-BEC63E1639F5";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA02121219098B9A00BBABD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
+				INFOPLIST_FILE = "MagnaVisionWebRTC Release.plist";
+				PRODUCT_NAME = "MagnaVisionWebRTC Release";
+				PROVISIONING_PROFILE = "95B0EFF6-0177-4974-93CD-026D9C318AA1";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		DA87BFFB19046F0300C274B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -601,6 +762,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA02121019098B9A00BBABD9 /* Build configuration list for PBXNativeTarget "MagnaVisionWebRTC Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA02121119098B9A00BBABD9 /* Debug */,
+				DA02121219098B9A00BBABD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA87BFC319046F0300C274B0 /* Build configuration list for PBXProject "MagnaVisionWebRTC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA87BFC719046F0300C274B0"
-               BuildableName = "MagnaVisionWebRTC.app"
-               BlueprintName = "MagnaVisionWebRTC"
+               BlueprintIdentifier = "DA0211E519098B9A00BBABD9"
+               BuildableName = "MagnaVisionWebRTC copy.app"
+               BlueprintName = "MagnaVisionWebRTC Release"
                ReferencedContainer = "container:MagnaVisionWebRTC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA87BFC719046F0300C274B0"
-            BuildableName = "MagnaVisionWebRTC.app"
-            BlueprintName = "MagnaVisionWebRTC"
+            BlueprintIdentifier = "DA0211E519098B9A00BBABD9"
+            BuildableName = "MagnaVisionWebRTC copy.app"
+            BlueprintName = "MagnaVisionWebRTC Release"
             ReferencedContainer = "container:MagnaVisionWebRTC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA87BFC719046F0300C274B0"
-            BuildableName = "MagnaVisionWebRTC.app"
-            BlueprintName = "MagnaVisionWebRTC"
+            BlueprintIdentifier = "DA0211E519098B9A00BBABD9"
+            BuildableName = "MagnaVisionWebRTC copy.app"
+            BlueprintName = "MagnaVisionWebRTC Release"
             ReferencedContainer = "container:MagnaVisionWebRTC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA87BFC719046F0300C274B0"
-            BuildableName = "MagnaVisionWebRTC.app"
-            BlueprintName = "MagnaVisionWebRTC"
+            BlueprintIdentifier = "DA0211E519098B9A00BBABD9"
+            BuildableName = "MagnaVisionWebRTC copy.app"
+            BlueprintName = "MagnaVisionWebRTC Release"
             ReferencedContainer = "container:MagnaVisionWebRTC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

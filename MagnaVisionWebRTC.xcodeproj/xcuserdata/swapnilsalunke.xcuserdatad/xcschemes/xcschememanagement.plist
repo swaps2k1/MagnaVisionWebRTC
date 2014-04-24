@@ -4,10 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MagnaVisionWebRTC Appstore Release.xcscheme</key>
+		<key>MagnaVisionWebRTC Release.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>MagnaVisionWebRTC.xcscheme</key>
 		<dict>
@@ -17,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DA0211E519098B9A00BBABD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DA87BFC719046F0300C274B0</key>
 		<dict>
 			<key>primary</key>
