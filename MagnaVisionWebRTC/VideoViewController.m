@@ -144,9 +144,10 @@ UIBackgroundTaskIdentifier bgTask = 0;
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.net/exit_webservice.php"]];
-    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/checkActive_webservice.php"]];
-    //URL signature changed
+ 
+    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/checkActive_webservice.php"]]; //Staging webservice
+  
+    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/checkActive_webservice.php"]];     //Production webservice
     
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
@@ -168,9 +169,10 @@ UIBackgroundTaskIdentifier bgTask = 0;
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.net/exit_webservice.php"]];
-    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]];
-    //URL signature changed
+    
+    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]];    //Staging Webservice
+    
+    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/exit_webservice.php"]];    //Production Webservice
     
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];

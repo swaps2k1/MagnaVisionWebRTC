@@ -213,9 +213,11 @@ else
    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
    NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-//    [request setURL:[NSURL URLWithString:@"http://magnavision.net/waiting_webservice.php"]];
-  //Changing request call
-    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/waiting_webservice.php"]];
+    
+    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/waiting_webservice.php"]]; Staging WebService
+    
+    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/waiting_webservice.php"]]; //Prod Web Service
+    
    [request setHTTPMethod:@"POST"];
    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
@@ -391,8 +393,8 @@ else
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.net/exit_webservice.php"]];
-    [request setURL:[NSURL URLWithString:@"http://amada.magnavision360.com/exit_webservice.php"]];
+    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]]; // Staging WebService
+    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/exit_webservice.php"]];    //Prod Webservice
     //URL signature changed
     
     [request setHTTPMethod:@"POST"];
