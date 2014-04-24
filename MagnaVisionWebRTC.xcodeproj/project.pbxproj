@@ -308,6 +308,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Simcoe;
 				TargetAttributes = {
+					DA87BFC719046F0300C274B0 = {
+						DevelopmentTeam = MB365MEN5R;
+					};
 					DA87BFEB19046F0300C274B0 = {
 						TestTargetID = DA87BFC719046F0300C274B0;
 					};
@@ -520,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: swapnil salunke (F274PNV85D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
@@ -540,6 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
@@ -548,7 +552,7 @@
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC/MagnaVisionWebRTC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "00A004CB-0892-4E08-B032-BEC63E1639F5";
+				PROVISIONING_PROFILE = "A791CF5C-5D15-4F4E-BAF3-EF621C04FE86";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
