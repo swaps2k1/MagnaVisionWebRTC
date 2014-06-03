@@ -214,9 +214,9 @@ else
    NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/waiting_webservice.php"]]; Staging WebService
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/waiting_webservice.php"]]; //Staging WebService
     
-    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/waiting_webservice.php"]]; //Prod Web Service
+    //[request setURL:[NSURL URLWithString:@"http://magnavision360.com/waiting_webservice.php"]]; //Prod Web Service
     
    [request setHTTPMethod:@"POST"];
    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
@@ -285,7 +285,7 @@ else
                 {
                     if (session != nil)
                     {
-                        VideoViewController *obj;
+                        VideoViewController *obj = nil;
                         UIStoryboard *mainStoryboard;
                         if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) {
                             mainStoryboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle:nil];
@@ -393,8 +393,8 @@ else
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]]; // Staging WebService
-    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/exit_webservice.php"]];    //Prod Webservice
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]]; // Staging WebService
+    //[request setURL:[NSURL URLWithString:@"http://magnavision360.com/exit_webservice.php"]];    //Prod Webservice
     //URL signature changed
     
     [request setHTTPMethod:@"POST"];

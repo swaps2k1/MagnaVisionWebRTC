@@ -12,7 +12,6 @@
 		DA0211E919098B9A00BBABD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87BFDB19046F0300C274B0 /* AppDelegate.m */; };
 		DA0211EA19098B9A00BBABD9 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87C0041904754400C274B0 /* InfoViewController.m */; };
 		DA0211EB19098B9A00BBABD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87BFD719046F0300C274B0 /* main.m */; };
-		DA0211ED19098B9A00BBABD9 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04D190479B900C274B0 /* Opentok.framework */; };
 		DA0211EE19098B9A00BBABD9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04B190479A400C274B0 /* CoreTelephony.framework */; };
 		DA0211EF19098B9A00BBABD9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0491904799700C274B0 /* AudioToolbox.framework */; };
 		DA0211F019098B9A00BBABD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0471904798F00C274B0 /* AVFoundation.framework */; };
@@ -82,14 +81,14 @@
 		DA87C0461904798700C274B0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0451904798700C274B0 /* CFNetwork.framework */; };
 		DA87C0481904798F00C274B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0471904798F00C274B0 /* AVFoundation.framework */; };
 		DA87C04A1904799700C274B0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C0491904799700C274B0 /* AudioToolbox.framework */; };
-		DA87C04C190479A400C274B0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04B190479A400C274B0 /* CoreTelephony.framework */; };
-		DA87C04E190479B900C274B0 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04D190479B900C274B0 /* Opentok.framework */; };
 		DA87C05219047BAE00C274B0 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA87C05119047BAE00C274B0 /* opentok.bundle */; };
 		DAC15C151905B55D00189C7D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C131905B55D00189C7D /* logo.png */; };
 		DAC15C161905B55D00189C7D /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C141905B55D00189C7D /* logo@2x.png */; };
 		DAC15C191905B83D00189C7D /* btnGo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C171905B83D00189C7D /* btnGo.png */; };
 		DAC15C1A1905B83D00189C7D /* btnGo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC15C181905B83D00189C7D /* btnGo@2x.png */; };
 		DACBECC5190701A000D4EBA8 /* Endconference.png in Resources */ = {isa = PBXBuildFile; fileRef = DACBECC4190701A000D4EBA8 /* Endconference.png */; };
+		DAF137E2192003AE00586D25 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF137E1192003AE00586D25 /* Opentok.framework */; };
+		DAF137E3192004AC00586D25 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87C04B190479A400C274B0 /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,13 +148,13 @@
 		DA87C0471904798F00C274B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DA87C0491904799700C274B0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DA87C04B190479A400C274B0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		DA87C04D190479B900C274B0 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opentok.framework; path = "../../opentok-ios-sdk-webrtc-master/Opentok.framework"; sourceTree = "<group>"; };
 		DA87C05119047BAE00C274B0 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = opentok.bundle; sourceTree = "<group>"; };
 		DAC15C131905B55D00189C7D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAC15C141905B55D00189C7D /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAC15C171905B83D00189C7D /* btnGo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGo.png; sourceTree = "<group>"; };
 		DAC15C181905B83D00189C7D /* btnGo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGo@2x.png"; sourceTree = "<group>"; };
 		DACBECC4190701A000D4EBA8 /* Endconference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endconference.png; sourceTree = "<group>"; };
+		DAF137E1192003AE00586D25 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +162,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0211ED19098B9A00BBABD9 /* Opentok.framework in Frameworks */,
 				DA0211EE19098B9A00BBABD9 /* CoreTelephony.framework in Frameworks */,
 				DA0211EF19098B9A00BBABD9 /* AudioToolbox.framework in Frameworks */,
 				DA0211F019098B9A00BBABD9 /* AVFoundation.framework in Frameworks */,
@@ -188,8 +186,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA87C04E190479B900C274B0 /* Opentok.framework in Frameworks */,
-				DA87C04C190479A400C274B0 /* CoreTelephony.framework in Frameworks */,
+				DAF137E3192004AC00586D25 /* CoreTelephony.framework in Frameworks */,
+				DAF137E2192003AE00586D25 /* Opentok.framework in Frameworks */,
 				DA87C04A1904799700C274B0 /* AudioToolbox.framework in Frameworks */,
 				DA87C0481904798F00C274B0 /* AVFoundation.framework in Frameworks */,
 				DA87C0461904798700C274B0 /* CFNetwork.framework in Frameworks */,
@@ -246,7 +244,7 @@
 		DA87BFCA19046F0300C274B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA87C04D190479B900C274B0 /* Opentok.framework */,
+				DAF137E1192003AE00586D25 /* Opentok.framework */,
 				DA87C04B190479A400C274B0 /* CoreTelephony.framework */,
 				DA87C0491904799700C274B0 /* AudioToolbox.framework */,
 				DA87C0471904798F00C274B0 /* AVFoundation.framework */,
@@ -686,15 +684,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
+					/Users/swapnilsalunke/Repositories/MagnaVisionWebRTC,
+					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC/MagnaVisionWebRTC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "00A004CB-0892-4E08-B032-BEC63E1639F5";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -705,16 +706,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Simcoe Habilitation Services Inc (MB365MEN5R)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
+					/Users/swapnilsalunke/Repositories/MagnaVisionWebRTC,
+					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
 				INFOPLIST_FILE = "MagnaVisionWebRTC/MagnaVisionWebRTC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5520217A-08BB-4C42-9FA9-9EA5CB24B14B";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

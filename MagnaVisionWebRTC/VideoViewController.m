@@ -124,7 +124,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
         [timerForPeriodicHit invalidate];
         timerForPeriodicHit = nil;
     }
-    timerForPeriodicHit = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(updateThatIAmConnected:) userInfo:nil repeats:YES];
+    timerForPeriodicHit = [NSTimer scheduledTimerWithTimeInterval:20 target:self selector:@selector(updateThatIAmConnected:) userInfo:nil repeats:YES];
     NSLog(@"Timer Starts...");
 }
 -(void)disableTimer
@@ -145,9 +145,9 @@ UIBackgroundTaskIdentifier bgTask = 0;
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
  
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/checkActive_webservice.php"]]; //Staging webservice
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/checkActive_webservice.php"]]; //Staging webservice
   
-    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/checkActive_webservice.php"]];     //Production webservice
+    //[request setURL:[NSURL URLWithString:@"http://magnavision360.com/checkActive_webservice.php"]];     //Production webservice
     
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
@@ -164,15 +164,15 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 -(void)performExitAction
 {
-    
+    [self disableTimer];
     NSString *post =[NSString stringWithFormat:@"passkey_id=%@&frmutype=%@",strPassKey_Id,strFrmuType];
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
-    //[request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]];    //Staging Webservice
+    [request setURL:[NSURL URLWithString:@"http://magnavision.webfactional.com/exit_webservice.php"]];    //Staging Webservice
     
-    [request setURL:[NSURL URLWithString:@"http://magnavision360.com/exit_webservice.php"]];    //Production Webservice
+    //[request setURL:[NSURL URLWithString:@"http://magnavision360.com/exit_webservice.php"]];    //Production Webservice
     
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
@@ -222,7 +222,8 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (IBAction)exitButtonClicked:(UIButton*)button
 {
-    [self performExitAction];
+    [self doDisconnect];
+    
 }
 - (void)publishButtonClicked:(UIButton*)button
 {
@@ -281,13 +282,13 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
    if (_publisher!=NULL)
    {
-       if (isDisConnected==NO) {
-           [self doUnpublish];
-       }
-       
-        _subscriber.delegate = nil;
-        [_session disconnect];
-        [_subscriber close];
+//       if (isDisConnected==NO) {
+//           [self doUnpublish];
+//       }
+//       
+//        _subscriber.delegate = nil;
+//        [_session disconnect];
+//        [_subscriber close];
         _subscriber = nil;
     }
     [super viewWillDisappear:animated];
@@ -328,7 +329,8 @@ UIBackgroundTaskIdentifier bgTask = 0;
 }
 
 - (void)doDisconnect 
-{  
+{
+    NSLog(@"OTSession doing disconnect");
     [_session disconnect];
 }
 
@@ -478,6 +480,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)sessionDidDisconnect:(OTSession*)session 
 {
+    NSLog(@"sessionDidDisconnect called");
     btnDisconnect.hidden = YES;
     [self disableTimer];
     if (kUseButtons)
@@ -486,7 +489,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
     btnConnection.userInteractionEnabled=YES;
     btnDisconnect.userInteractionEnabled=YES;
     _lblConnectivity.text = @"not currently connected";
-    [self performExitAction];
+    [self performSelector:@selector(performExitAction) withObject:nil afterDelay:1];
 }
 
 - (void)session:(OTSession*)session didFailWithError:(OTError*)error
@@ -538,9 +541,8 @@ UIBackgroundTaskIdentifier bgTask = 0;
 {
     NSLog(@"Session did drop connection .....");
     
-    [self doUnpublish];
-    [self performExitAction];
-    //[self doPublish];
+    //[self doUnpublish];
+    [self performSelector:@selector(performExitAction) withObject:nil afterDelay:1];    //[self doPublish];
     //[self doConnect];
 }
 

@@ -12,6 +12,8 @@
 	<dict>
 		<key>3A91810E-8305-42D2-9A5A-D78985DA76F5</key>
 		<string>https://github.com/swaps2k1/MagnaVisionWebRTC.git</string>
+		<key>53F50FF0-82BD-48BE-A481-D6726B94D296</key>
+		<string>https://github.com/swaps2k1/opentok-ios-sdk-webrtc.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MagnaVisionWebRTC.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>3A91810E-8305-42D2-9A5A-D78985DA76F5</key>
 		<string>../..</string>
+		<key>53F50FF0-82BD-48BE-A481-D6726B94D296</key>
+		<string>../../../opentok-ios-sdk-webrtc</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/swaps2k1/MagnaVisionWebRTC.git</string>
@@ -35,6 +39,14 @@
 			<string>3A91810E-8305-42D2-9A5A-D78985DA76F5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MagnaVisionWebRTC</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>53F50FF0-82BD-48BE-A481-D6726B94D296</string>
+			<key>IDESourceControlWCCName</key>
+			<string>opentok-ios-sdk-webrtc</string>
 		</dict>
 	</array>
 </dict>
