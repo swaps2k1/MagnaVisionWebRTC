@@ -51,6 +51,7 @@
 		DA44600619048E910048049E /* reconnects.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600019048E910048049E /* reconnects.png */; };
 		DA44600719048E910048049E /* end.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600119048E910048049E /* end.png */; };
 		DA44600819048E910048049E /* reconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = DA44600219048E910048049E /* reconnect.png */; };
+		DA4BCB82193E5CB30025EADE /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF137E1192003AE00586D25 /* Opentok.framework */; };
 		DA87BFCC19046F0300C274B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCB19046F0300C274B0 /* Foundation.framework */; };
 		DA87BFCE19046F0300C274B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCD19046F0300C274B0 /* CoreGraphics.framework */; };
 		DA87BFD019046F0300C274B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87BFCF19046F0300C274B0 /* UIKit.framework */; };
@@ -162,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4BCB82193E5CB30025EADE /* Opentok.framework in Frameworks */,
 				DA0211EE19098B9A00BBABD9 /* CoreTelephony.framework in Frameworks */,
 				DA0211EF19098B9A00BBABD9 /* AudioToolbox.framework in Frameworks */,
 				DA0211F019098B9A00BBABD9 /* AVFoundation.framework in Frameworks */,
@@ -564,6 +566,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
+					/Users/swapnilsalunke/Repositories/MagnaVisionWebRTC,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
@@ -584,6 +587,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swapnilsalunke/Repositories/opentok-ios-sdk-webrtc-master",
+					/Users/swapnilsalunke/Repositories/MagnaVisionWebRTC,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagnaVisionWebRTC/MagnaVisionWebRTC-Prefix.pch";
