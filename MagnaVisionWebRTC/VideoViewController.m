@@ -504,28 +504,34 @@ UIBackgroundTaskIdentifier bgTask = 0;
     {
         case OTAuthorizationFailure:
         {
+            NSLog(@"Session Authorization failed");
         }
             break;
         case OTInvalidSessionId:
         {
+            NSLog(@"Session is invalid");
         }
             break;
             
         case OTConnectionFailed:
         {
+            NSLog(@"Session Connection failed");
             //[self disconnectButtonClicked:nil];
         }
             break;
         case OTNoMessagingServer:
         {
+            NSLog(@"Session has no messaging Server");
         }
             break;
         case OTSDKUpdateRequired:
         {
+            NSLog(@"Session sdk update required");
         }
             break;
         case OTP2PSessionUnsupported:
         {
+            NSLog(@"Session sdk update required");
         }
             break;
         case OTUnknownServerError:
