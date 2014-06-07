@@ -140,7 +140,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
 {
     
     NSLog(@"Update... I am connected...");
-    NSString *post =[NSString stringWithFormat:@"passkey_id=%@&frmutype=%@",strPassKey_Id,strFrmuType];
+    NSString *post =[NSString stringWithFormat:@"passkey_id=%@&utype=%@",strPassKey_Id,strFrmuType];
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -468,13 +468,14 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)sessionDidConnect:(OTSession*)session
 {
+    NSLog(@"sessionDidConnect called");
+
     if (kUseButtons)
         //btnDisconnect.hidden = NO;
     
     btnConnection.hidden = YES;
     btnConnection.userInteractionEnabled=YES;
     btnDisconnect.userInteractionEnabled=YES;
-    NSLog(@"sessionDidConnect called");
     [self performSelector:@selector(doPublish) withObject:nil afterDelay:0.4];
 }
 
@@ -542,6 +543,7 @@ UIBackgroundTaskIdentifier bgTask = 0;
     NSLog(@"Session did drop connection .....");
     
     //[self doUnpublish];
+    [self doDisconnect];
     [self performSelector:@selector(performExitAction) withObject:nil afterDelay:1];    //[self doPublish];
     //[self doConnect];
 }
@@ -550,16 +552,24 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)session:(OTSession*)mySession didReceiveStream:(OTStream*)stream
 {
+    NSLog(@"Session is receiveing stream");
     BOOL goAhead = NO;
 
 #if NON_WEB_RTC
     NSString* streamConnectionId = stream.connection.connectionId;
     NSString* ourSessionConnectionId = _session.connection.connectionId;
     
+    NSLog(@"Non webrtc Goahead condition");
+    NSLog(@"Stream connect Id - %@",streamConnectionId);
+    NSLog(@"Our Session connect Id - %@",ourSessionConnectionId);
+    
     if ((subscribeToSelf && [streamConnectionId isEqualToString:ourSessionConnectionId]) ||
         (!subscribeToSelf && ![streamConnectionId isEqualToString:ourSessionConnectionId]) )
             goAhead = YES;
 #else
+    NSLog(@"Webrtc Goahead condition");
+    NSLog(@"Device Current name - %@",UIDevice.currentDevice.name);
+    NSLog(@"Stream Name - %@",stream.name);
     if (![UIDevice.currentDevice.name isEqualToString:stream.name])
         goAhead = YES;
 #endif
@@ -585,10 +595,15 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
         }
     }
+    else
+    {
+        NSLog(@"You have no go ahead...!!");
+    }
 }
 
 - (void)session:(OTSession*)session didDropStream:(OTStream*)stream
 {
+    NSLog(@"Session is dropping stream");
     if (!subscribeToSelf
         && _subscriber
         && [_subscriber.stream.streamId isEqualToString: stream.streamId]) {
@@ -602,19 +617,25 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)publisher:(OTPublisher*)publisher didFailWithError:(OTError*) error
 {
+    NSLog(@"Publisher failed...");
+
     switch ([error code])
     {
         case OTNoMediaPublished:
         {
+            NSLog(@"Publisher failed...No Media Published");
         }
             break;
         case OTUserDeniedCameraAccess:
         {
+            NSLog(@"Publisher failed...Camera not allowed");
+
         }
             break;
             
         case OTSessionDisconnected:
         {
+            NSLog(@"Publisher failed...Session disconnected");
             //[self disconnectButtonClicked:nil];
         }
             
@@ -623,7 +644,9 @@ UIBackgroundTaskIdentifier bgTask = 0;
 }
 
 - (void)publisherDidStartStreaming:(OTPublisher *)publisher
-{    
+{
+    NSLog(@"Publisher is starting stream");
+    
     _lblConnectivity.text = [self returnCorrectString:[[NSUserDefaults standardUserDefaults] objectForKey:@"chatKey"]];
     
     if (_publisher==NULL)
@@ -647,6 +670,8 @@ UIBackgroundTaskIdentifier bgTask = 0;
 #pragma mark - OTSubscriberDelegate methods
 - (void)subscriberDidConnectToStream:(OTSubscriber*)subscriber
 {
+    NSLog(@"Subscriber Connected to stream");
+    
     [self.view addSubview:subscriber.view];
     [self setupFrames:[UIApplication sharedApplication].statusBarOrientation];
     [[subscriber.view layer] setBorderWidth:10.0];
@@ -661,16 +686,18 @@ UIBackgroundTaskIdentifier bgTask = 0;
 
 - (void)subscriber:(OTSubscriber *)subscriber didFailWithError:(OTError *)error
 {
+    NSLog(@"Subscriber Failed...");
     switch ([error code])
     {
         case OTFailedToConnect:
         {
-            
+            NSLog(@"Subscriber Failed...Failed to connect");
             //[self disconnectButtonClicked:nil];
         }
             break;
         case OTConnectionTimedOut:
         {
+            NSLog(@"Subscriber Failed...Timed Out");
             //[self disconnectButtonClicked:nil];
             
         }
@@ -678,9 +705,11 @@ UIBackgroundTaskIdentifier bgTask = 0;
             
         case OTNoStreamMedia:
         {
+            NSLog(@"Subscriber Failed...No Streaming media");
         }break;
         case OTInitializationFailure:
         {
+            NSLog(@"Subscriber Failed...Initialization Failure");
         }
         break;
             
